@@ -1,0 +1,117 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Rye', cursive;
+    font-size: 16px;
+    background-image: url("../../Assets/Images/desert-background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1
+   
+}
+
+.container {
+    width:100%;
+    height: 100%;
+    
+  
+}
+     
+
+
+#hangman-logo {
+    width: 40%;
+    height: 40%;
+    margin-left: 5%;
+    margin-top: -7%;
+  
+
+    float: left
+     
+      
+}
+
+#row1 {
+ width: 50%;
+ margin-top: 4%;
+
+ float: left
+}
+
+#row2 {
+   
+    padding-top:1%;
+    clear: both
+    
+    
+}
+
+#press-start {
+    margin-left: 19%;
+}
+
+#row3 {
+
+
+margin-left: 73%;
+
+
+
+
+}
+
+
+
+
+#row4 {
+    width: 80%;
+    
+
+}
+
+#guessButton {
+ 
+    background-color: rgba(255, 0, 0, 0.863);
+    padding: 1%
+    
+
+}
+#guessLetter {
+    padding: 2%
+   
+}
+
+
+#row5 {
+    
+  width: 80%;
+  margin-top: 2%;
+   
+    
+}
+
+#guessWord{
+   
+
+}
+
+#lettersGuessedHeading {
+    
+}
+
+#row6 {
+
+    margin-left: 73%;
+    
+  
+}
+
+#guessesLeft {
+    
+}
+
+#guessesLeftNumber {
+
+}
+
