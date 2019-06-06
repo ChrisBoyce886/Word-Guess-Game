@@ -177,7 +177,7 @@ document.getElementById("guessButton").onclick = function buttonClick(event) {
       
       //Play losing audio clip 
       var audio = new Audio();
-      audio.src = "../HW3/Assets/Sounds/Winner.mp3";
+      audio.src = "../Assets/Sounds/Winner.mp3";
       audio.play();
 
       //Alert and ask if user wants to play again; set 1 second delay to allow sound to play first
@@ -199,7 +199,7 @@ document.getElementById("guessButton").onclick = function buttonClick(event) {
 
       //Play winning audio clip 
       var audio = new Audio();
-      audio.src = "../HW3/Assets/Sounds/Loser.mp3";
+      audio.src = "../Assets/Sounds/Loser.mp3";
       audio.play();
 
       //Alert and ask if user wants to play again; set 1 second delay to allow sound to play first
