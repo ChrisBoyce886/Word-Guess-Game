@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="Assets/CSS/style.css"> <!--Link to external CSS Stylesheet-->
 
-  <script type="text/javascript" src="Assets/Javascript/game.js"></script> <!--Link to external Javascript file-->
+ 
 
   <link rel="shortcut icon" type="image/ico" href="Assets/Images/hangman.ico"> <!--Favicon-->
 
@@ -30,31 +30,31 @@
 
 <div class="row" id="row1">
         <div class="col-sm-4 center-block text-center">
-            <h2>Wins: </h2> <h2 id="wins">10</h2>
+            <h2>Wins: </h2> <h2 id="wins"></h2>
         </div>
         <div class="col-sm-4 center-block text-center">
-                <h2>Losses:</h2> <h2 id="losses">10</h2>
+                <h2>Losses:</h2> <h2 id="losses"></h2>
             </div>
     </div>
 <div class="row" id="row2">
     <div class="col-sm-12">
-        <span class="align-text-bottom" id="press-start">Press any key to begin</span>
+        <span class="align-text-bottom" id="press-start">Enter a letter to begin</span>
     </div>
 </div>
 
 <div class="row" id="row3">
     <div class="col-sm-12 center-block text-center">
-        <h3><u id="lettersGuessedHeading">Letters already Guessed:</u></h3>
+        <h3><u id="lettersGuessedHeading">Wrong Letters Guessed:</u></h3>
         <br><br> 
-        <h3><p id=lettersGuessed>ssssss</p></h3>
+        <h3><p id=lettersGuessed></p></h3>
     </div>
 </div>
 
 <div class="row" id="row4">
         <div class="col-sm-12 center-block text-center">
                 <form class="form-inline justify-content-center">
-                        <input type="text" class="form-control text-center" id="guessLetter" maxlength="1"  placeholder="Enter a letter"> 
-                        <button type="submit" class="btn btn-danger" id="guessButton">Guess</button>
+                        <input type="text" class="form-control text-center" id="guessLetter" maxlength="1"  placeholder="Enter a letter" > 
+                        <button onsubmit="Enter()" type="submit" class="btn btn-danger" id="guessButton">Guess</button>
                         
                     </form>  
         </div>
@@ -63,7 +63,7 @@
         <div class="row" id="row5">
         <div class="col-sm-12 center-block text-center">
             <div>
-                <h3 id=wordChoice>_ _</h3>
+                <h3 id=underscore></h3>
             </div>
 
         </div>
@@ -72,9 +72,9 @@
 
 <div class="row" id="row6">
         <div class="col-sm-12 center-block text-center">
-            <h3><u id="guessesLeft">Guesses Remaining</u></h3>
+            <h3><u id="guessesLeft">Guesses Remaining:</u></h3>
             <br><br>
-            <h3><p id=guessesLeftNumber>10</p></h3>
+            <h3><p id=guessesLeftNumber></p></h3>
         </div>
     </div>
 
@@ -82,7 +82,7 @@
     <footer class="container">
             <nav class="navbar fixed-bottom" id="sticky-footer">
               <div class="container text-center col-sm-12">
-                  <small class="navbar-text col-sm-12" id="footerText">All words are "web development" related</small>
+                  <small class="navbar-text col-sm-12" id="footerText">All words are "Country Western" related</small>
               </div> 
             </nav>
           </footer>
@@ -94,7 +94,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="Assets/Javascript/game.js"></script> <!--Link to external Javascript file-->
 
 </body>
 </html>
