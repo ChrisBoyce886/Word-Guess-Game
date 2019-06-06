@@ -175,7 +175,7 @@ document.getElementById("guessButton").onclick = function buttonClick(event) {
       wins++;
       document.getElementById("wins").textContent = wins; 
       
-      //Play losing audio clip 
+      //Play winning audio clip 
       var audio = new Audio();
       audio.src = "../../Assets/Sounds/Winner.mp3";
       audio.play();
@@ -197,7 +197,7 @@ document.getElementById("guessButton").onclick = function buttonClick(event) {
       losses++;
       document.getElementById("losses").textContent = losses; 
 
-      //Play winning audio clip 
+      //Play losing audio clip 
       var audio = new Audio();
       audio.src = "../../Assets/Sounds/Loser.mp3";
       audio.play();
